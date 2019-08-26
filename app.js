@@ -20,23 +20,25 @@ function addNumber() {
 
 var mySum = 0;
 var mynewNum = 0;
-for ( var h = 0; h < myNum.myHours.length; h++){
-    var liEl = document.createElement('li');
-    mynewNum = getRandomInt(150);
-    liEl.textContent = `${myNum.myHours[h]}: ${mynewNum} cookies`;
-    mySum = mySum+mynewNum;
-    document.getElementById('Hours').appendChild(liEl);
-}
-
-liEl = document.createElement('li');
-liEl.textContent = `Totdal: ${mySum} cookies`;
-document.getElementById('Hours').appendChild(liEl);
 
 
 for ( var k = 0; k < myNum.myCity.length; k++){
-    var liEl = document.createElement('li');
+    var liEl = document.createElement('ul');
     liEl.textContent = myNum.myCity[k];
-    document.getElementById('City').appendChild(liEl);
+    document.getElementById('Forcast').appendChild(liEl);
+
+        for ( var h = 0; h < myNum.myHours.length; h++){
+            var liEl = document.createElement('li');
+            mynewNum = getRandomInt(120);
+            liEl.textContent = `${myNum.myHours[h]}: ${mynewNum} cookies`;
+            mySum = mySum+mynewNum;
+            document.getElementById('Forcast').appendChild(liEl);
+        }
+
+        liEl = document.createElement('li');
+        liEl.textContent = `Total: ${mySum} cookies \n`;
+        document.getElementById('Forcast').appendChild(liEl);
+        mySum = 0;
 }
 
 
