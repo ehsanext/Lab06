@@ -1,81 +1,47 @@
-# Class 6: The DOM, Domain Modeling, and Introduction to Objects
+# Lab 06: Start the Salmon Cookies project
 
-<a id="top"></a>
-## Lecture 6
+In class, we learned how to model an entity in JavaScript using objects. Now, it's your turn to start building an application that models the problem domain in the support doc linked in *Helpful Resources*.
 
-## Today's Schedule
-- Announcements
-  - Review feedback from week 1 surveys
-- Go over student surveys *[15 minutes]*
-- Discuss upcoming Career Coaching assignments
-- Code Review *[30 minutes]*
-- [Go over the assigned readings](#readings) *[60 minutes]*
-- Code demo *[75 minutes]*
+You will also simultaneously be working with more specific style and design concepts with this assignment over the next few labs.
 
-## Learning Objectives
+## Setup and Documentation
 
-As a result of completing Lecture 6 of Code 201, students will:
-- Be able to translate a real-world problem domain into a code model by using provided user stories and technical requirements, as measured by successful completion of the daily code assignment
-- Demonstrate an understanding of how the browser represents an HTML document as an object that can be manipulated with JavaScript, as measured by successful completion of the daily code assignment and a quiz administered in Canvas.
-- Use JavaScript to dynamically render array data as an unordered list in the DOM, as measured by successful completion of the daily code assignment
-- Demonstrate an understanding of how object literals are structured in JavaScript, as well as how to access and reassign values/functionality to their properties and methods, as measured by successful completion of the daily code assignment and a quiz administered in Canvas.
-- Demonstrate an understanding of how dot notation and bracket notation are used to access/reassign properties and methods in JavaScript objects, as measured by successful completion of the daily code assignment and a quiz administered in Canvas.
+**Refer to the `assets` directory in the class repository for more information you need to get started on this project.**
 
-[-top-](#top)
+Before writing a single line of code, be sure that you have a new repository (with a README!) called cookie-stand, and do your work in that directory. Each day you'll be working in separate branches. Once the repo is initialized and set up today, switch to a new branch for your work. Branch names can be whatever you want; it is suggested that you use some sort of standard organization such as `day-feature` for the branch name, such as `tue-models`. **Remember that there is a guide to setting up repos for this course in the Day 2 directory.***
 
-## Readings
+Refer to the "Setting up a new project" document in the Class 2 directory of the class repository to do the intital file/directory configuration of this project.
 
-- ["Understanding The Problem Domain Is The Hardest Part Of Programming"](http://simpleprogrammer.com/2013/07/15/understanding-the-problem-domain-is-the-hardest-part-of-programming/) (Sonmez)
-- JS Chapter 3: "Functions, Objects, and Methods" (pp.101-144)
-- JS Chapter 5: "The Document Object Model"
-- [Read about Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+## User Stories and Feature Tasks
 
-[-top-](#top)
+### User Stories (MVP)
+ - As a user, I want a webpage that displays individual store data for my Salmon Cookie Shops, so that I can be informed about how to run my business
+ - As a developer, I want to represent the store data in a list format on the webpage, so my client can view the information
+ - As a developer, I want to use object-oriented programming to build this site, so that the site will be more effective and the code will be easier to read and understand
 
-### Notes on the assigned readings
+### Technical Requirements
+ - New repository properly set up with a license and README, and cloned to local machine
+ - Working on a non-master branch, with regular commit history
+ - Good use of Object Literals **(no constructors allowed today)**; one for each store model; properties/values and methods are correctly constructed and given meaningful names
+ - Main page meets requirements of the problem domain
+ - Use template literals in your JS logic to render the stores as lists on the sales page
 
-**Article on Domain Modeling (Sobol)**
+### Stretch Goals
 
-- Domain modeling is the process of creating a conceptual model for a specific problem. And a domain model that's articulated well can verify and validate your understanding of that problem.
-- Here's some tips to follow when building your own domain models:
-  - When modeling a single entity that'll have many instances, build self-contained objects with the same attributes and behaviors.
-  - Model its attributes with a constructor function that defines and initializes properties.
-  - Model its behaviors with small methods that focus on doing one job well.
-  - Create instances using the new keyword followed by a call to a constructor function.
-  - Store the newly created object in a variable so you can access its properties and methods from outside.
-  - Use the this variable within methods so you can access the object's properties and methods from inside.
+*Read [this article](https://steadfastcreative.com/low-fidelity-vs-high-fidelity-wireframes/){:target="_blank"}, [this article](https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes/){:target="_blank"}, and [this article](https://www.justinmind.com/blog/low-fidelity-vs-high-fidelity-wireframing-is-paper-dead/){:target="_blank"} on the differences between low-fidelity and high-fidelity wireframes. Based on these readings, draw conclusions about what you would want in your own low-fidelity and high-fidelity wireframes.*
 
-**"Understanding The Problem Domain Is The Hardest Part Of Programming" (Sonmez)**
+ - As a developer, I want to make some headway on the public-facing page for the business by generating a low-fidelity wireframe of what I want the page to look like.
+- As a developer, I want to make some headway on the public-facing page for the business by generating a high-fidelity wireframe of what I want the page to look like.
 
-- Why problem domains are hard
-- Programming is easy if you understand the problem domain
+## Getting Started
 
-**JS Chapter 3: "Functions, Objects, and Methods" (pp.100-144)**
+- You are making five object literals in your JavaScript today. Consider what would be an efficient process for building those out.
+- You have starting data, and a goal of end data that includes both arrays and single values. Think about what arrays you might need and also how you will use object methods to do your calculations. Keep in mind the single responsibility principle: a function/method should do only one thing.
 
-- p.101: Object literal notation
-- p.102: Accessing an object and dot notation
-- p.106: Creating an object: constructor notation (‘this’ is shown but not explained)
-- p.107: Updating an object
-- p.108-112: Creating many objects: constructor notation (‘this’ explained on p.108)
-- p.118: Arrays are objects
-- p.119: Arrays of objects & objects in arrays
-- p.120: What are built-in objects?
-- p.124: Window object
-- p.126: Document object
-- p.128: String object
-- p.130: Working with strings (concatenation)
-- p.132: Number object
-- p.134: Math object
+## Submission Instructions
 
-**JS Chapter 5: "The Document Object Model"**
-
-- p.186: The DOM tree is a model of a web page (diagram on p.187)
-- p.188: Overview working with the DOM tree (accessing elements, setting values, create, attributes)
-- p.190: Caching DOM queries (i.e. variables)
-- p.192: Accessing elements
-- p.196: Nodelists: DOM queries that return more than one element
-- p.208: Traversing the DOM
-- p.212: How to get/update element content
-- p.236: Examining the DOM in Chrome
-
-[-top-](#top)
+- Submit the link to your GitHub repo for this project
+- Add a comment to this Canvas submission with answers to the following questions
+  - How did this go, overall?
+  - What observations or questions do you have about what you've learned so far?
+  - How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
