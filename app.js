@@ -24,12 +24,12 @@ var mynewNum = 0;
 
 for ( var k = 0; k < myNum.myCity.length; k++){
     var liEl = document.createElement('ul');
-    liEl.textContent = myNum.myCity[k];
+    liEl.textContent = `${myNum.myCity[k]} :`;
     document.getElementById('Forcast').appendChild(liEl);
 
         for ( var h = 0; h < myNum.myHours.length; h++){
             var liEl = document.createElement('li');
-            mynewNum = getRandomInt(120);
+            mynewNum = getRandomInt(110);
             liEl.textContent = `${myNum.myHours[h]}: ${mynewNum} cookies`;
             mySum = mySum+mynewNum;
             document.getElementById('Forcast').appendChild(liEl);
